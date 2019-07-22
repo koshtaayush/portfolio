@@ -1,6 +1,5 @@
 body{
     background-color: #000 !important;
-    /*background-image: url('portfolio_image.png');*/
 }
 
 navbar{
@@ -45,7 +44,6 @@ navbar{
 }
 
 .container{    
-    //opacity: 0.1 !important;
     font-size: 130px !important;  
     margin-top: 70px;   
 } 
@@ -92,16 +90,22 @@ navbar{
     padding: 5px 5px;
 }
 
-.swiper-container {
-    width: 400px;
-    height: 300px;
-    margin: 20px auto;
-    margin-left: 100px;
-    overflow: visible;
+.swiper-container-class {
+    /* width: 400px; */
+    /* height: 300px; */
+    /* margin: 20px auto; */
+    /* margin-left: 100px; */
+    /* overflow: visible; */
     cursor: -webkit-grab;
+    /* overflow-x: hidden;
+    /* overflow-x:hidden;  */
+    margin-top: 1em;
+    /* display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 3%; */
 }
         
-.swiper-slide {
+.swiper-slide-class {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -119,8 +123,8 @@ navbar{
     -webkit-align-items: center;
     align-items: center;*/
     background: #161316;
-    opacity: .3;
-    margin-right: 60px;
+    opacity: 1;
+    margin-bottom: 60px;
 }
 
 .content{
@@ -200,6 +204,12 @@ li{
 
 .end{
     padding-top:10px;
+}
+
+.swiper-wrapper-class{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 3%;
 }
 
 .swiper-button-next{
