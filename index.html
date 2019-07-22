@@ -12,14 +12,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/js/swiper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/css/swiper.min.css">
     <link rel="stylesheet" href="css/portfoliostyle.css">    
+    <!-- <link rel="stylesheet" href="./public/css/portfoliostyle.css">     -->
     <!--Script for executing functions-->
     <script>
+
+        window.onload = function(){
+            document.getElementsByClassName("header-buttons")[1].classList.add("active");
+        }
+
         function showNavBarMobile() {
             document.getElementsByClassName("navbar-mobile")[0].style.display = 'block';
         }
 
         function closeNavBarMobile() {
             document.getElementsByClassName("navbar-mobile")[0].style.display = 'none';
+        }
+
+        function changeActive(number){
+            for(let i=0; i<5; i++){
+                document.getElementsByClassName("header-buttons")[i].classList.remove("active");
+            }
+            document.getElementsByClassName("header-buttons")[number].classList.add("active");
         }
     </script>
     <!--End of script-->
@@ -32,10 +45,10 @@
                 <a class="navbar-brand header-buttons" href="#"><img src="images/hash.svg"></a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a class="header-buttons" href="#about">About</a></li>
-                <li><a class="header-buttons" href="#tech-part">Tech-stack</a></li>
-                <li><a class="header-buttons" href="#project-part">Projects</a></li>
-                <li><a class="header-buttons" href="#contact-part">Contact</a></li>
+                <li onclick="changeActive(1)"><a class="header-buttons" href="#about">About</a></li>
+                <li onclick="changeActive(2)"><a class="header-buttons" href="#tech-part">Tech-stack</a></li>
+                <li onclick="changeActive(3)"><a class="header-buttons" href="#project-part">Projects</a></li>
+                <li onclick="changeActive(4)"><a class="header-buttons" href="#contact-part">Contact</a></li>
             </ul>
             <div class="navbar-header-mobile" onclick="showNavBarMobile()">
                 <a class="navbar-brand navbar-brand-mobile header-buttons" href="#"><img src="images/hash.svg"></a>
@@ -56,7 +69,7 @@
             <p class="desc" id="hello">Hello, its me<br></p>
             <p class="desc" id="ayush">Ayush<span>.</span></p>
             <div class="abt">
-                <p>I am working as a front-end developer with 2 years of experience and am involved in some of my personal projects
+                <p>I am working as a front-end developer with 3 years of experience and am involved in some of my personal projects
                     as well</p>
             </div>
             <p class="tech-desc" id="tech-part">Oh, my-tech stack..</p>
@@ -176,9 +189,15 @@
     <div class="contact-content" id="contact-part">
         <div class="container">
             <div class="social-content">
-                <div class="social-part">Linkedin</div>
-                <div class="social-part">Github</div>
-                <div class="social-part">Mail</div>
+                <div class="social-part">
+                    <a href="https://www.linkedin.com/in/ayush-koshta/">Linkedin</a>
+                </div>
+                <div class="social-part">
+                    <a href="https://github.com/koshtaayush">Github</a>
+                </div>
+                <div class="social-part">
+                    <a href="mailto:koshtaayush@gmail.com">Mail</a></a>
+                </div>
             </div>
             <div class="contact-desc">
                 If you’d like to have a chat, I’m always available for a coffee. Drop me a message and I’ll get right back to you.
@@ -192,7 +211,7 @@
             </div>
 			
 			<div class="contact-button">
-                <a href="https://www.linkedin.com/in/ayush-koshta-259387ba" style="color:#000">Contact on Linkedin</a>
+                <a href="https://www.linkedin.com/in/ayush-koshta/" style="color:#000">Contact on Linkedin</a>
             </div>
         </div>
     </div>
