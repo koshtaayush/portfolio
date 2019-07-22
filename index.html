@@ -12,11 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/js/swiper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/css/swiper.min.css">
     <link rel="stylesheet" href="css/portfoliostyle.css">    
-    <!-- <link rel="stylesheet" href="./public/css/portfoliostyle.css">     -->
+    <!-- <link rel="stylesheet" href="./public/css/portfoliostyle.css"> -->
     <!--Script for executing functions-->
     <script>
 
-        window.onload = function(){
+        window.onload = function () {
             document.getElementsByClassName("header-buttons")[1].classList.add("active");
         }
 
@@ -28,8 +28,8 @@
             document.getElementsByClassName("navbar-mobile")[0].style.display = 'none';
         }
 
-        function changeActive(number){
-            for(let i=0; i<5; i++){
+        function changeActive(number) {
+            for (let i = 0; i < 5; i++) {
                 document.getElementsByClassName("header-buttons")[i].classList.remove("active");
             }
             document.getElementsByClassName("header-buttons")[number].classList.add("active");
@@ -55,9 +55,11 @@
             </div>
             <ul class="navbar-mobile navbar-fixed-top">
                 <span class="navbar-mobile-close" onclick="closeNavBarMobile()">x</span>
-                <li class="active" onclick="closeNavBarMobile()"><a class="header-buttons-mobile" href="index.html#about">About</a></li>
+                <li class="active" onclick="closeNavBarMobile()"><a class="header-buttons-mobile"
+                        href="index.html#about">About</a></li>
                 <li onclick="closeNavBarMobile()"><a class="header-buttons-mobile" href="#tech-part">Tech-stack</a></li>
-                <li onclick="closeNavBarMobile()"><a class="header-buttons-mobile" href="#project-part">Projects</a></li>
+                <li onclick="closeNavBarMobile()"><a class="header-buttons-mobile" href="#project-part">Projects</a>
+                </li>
                 <li onclick="closeNavBarMobile()"><a class="header-buttons-mobile" href="#contact-part">Contact</a></li>
             </ul>
         </div>
@@ -69,8 +71,9 @@
             <p class="desc" id="hello">Hello, its me<br></p>
             <p class="desc" id="ayush">Ayush<span>.</span></p>
             <div class="abt">
-                <p>I am working as a front-end developer with 3 years of experience and am involved in some of my personal projects
-                    as well </p>
+                <p>I am working as a front-end developer with 3 years of experience and am involved in some of my
+                    personal projects
+                    as well</p>
             </div>
             <p class="tech-desc" id="tech-part">Oh, my-tech stack..</p>
             <ul class="tech-icons">
@@ -83,62 +86,68 @@
             <p class="tech-desc" id="built">Oh, I also built..</p>
         </div>
 
-        <div class="swiper-container">
-            <div class="swiper-wrapper" id="project-part">
-                <div class="swiper-slide">
+        <div class="swiper-container-class">
+            <!-- <div class="swiper-button-prev"></div> -->
+            <div class="swiper-wrapper-class" id="project-part">
+                <div class="swiper-slide-class">
                     <div class="content">
                         <div class="heading-class">
                             <div class="prj-head">Github profile search</div>
                             <div class="prj-number">01</div>
                         </div>
-                        <div class="prj-description">An application built with reactjs which makes use of githu search api to list down all the profile
+                        <div class="prj-description">An application built with reactjs which makes use of githu search
+                            api to list down all the profile
                             based on the user name entered.</div>
                         <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
                     </div>
 
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide-class">
                     <div class="content">
                         <div class="heading-class">
                             <div class="prj-head">Movie-rush</div>
                             <div class="prj-number">02</div>
                         </div>
-                        <div class="prj-description">An application built with angularjs which gives you every detail about movie once you enter the movie
+                        <div class="prj-description">An application built with angularjs which gives you every detail
+                            about movie once you enter the movie
                             name.
                         </div>
                         <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
                     </div>
 
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide-class">
                     <div class="content">
                         <div class="heading-class">
                             <div class="prj-head">Weather-rush</div>
                             <div class="prj-number">03</div>
                         </div>
-                        <div class="prj-description">A google chrome extension built which detects your loaction and gives you the current weather.</div>
+                        <div class="prj-description">A google chrome extension built which detects your loaction and
+                            gives you the current weather.</div>
                         <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
                     </div>
 
                 </div>
-				<div class="swiper-slide">
+                <div class="swiper-slide-class">
                     <div class="content">
                         <div class="heading-class">
                             <div class="prj-head">Social-Card</div>
                             <div class="prj-number">04</div>
                         </div>
-                        <div class="prj-description">The application built on reactjs gives a sneak peak of the materia-ui design by google.
+                        <div class="prj-description">The application built on reactjs gives a sneak peak of the
+                            materia-ui design by google.
                         </div>
                         <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide-class">
                     <div class="content">
                         <div class="heading-class">
                             <div class="prj-head">Cryptocurrencies</div>
                             <div class="prj-number">05</div>
                         </div>
-                        <div class="prj-description">The application gives you the value of all the cryptocurrencies at the current moment and their exchange
+                        <div class="prj-description">The application gives you the value of all the cryptocurrencies at
+                            the current moment and their exchange
                             rates
                         </div>
                         <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
@@ -156,7 +165,8 @@
                     <div class="prj-head">Github profile search</div>
                     <div class="prj-number">01</div>
                 </div>
-                <div class="prj-description">An application built with reactjs which makes use of githu search api to list down all the profile based
+                <div class="prj-description">An application built with reactjs which makes use of githu search api to
+                    list down all the profile based
                     on the user name entered.</div>
                 <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
             </div>
@@ -165,7 +175,8 @@
                     <div class="prj-head">Movie-rush</div>
                     <div class="prj-number">02</div>
                 </div>
-                <div class="prj-description">An application built with angularjs which gives you every detail about movie once you enter the movie name.
+                <div class="prj-description">An application built with angularjs which gives you every detail about
+                    movie once you enter the movie name.
                 </div>
                 <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
             </div>
@@ -174,14 +185,19 @@
                     <div class="prj-head">Weather-rush</div>
                     <div class="prj-number">03</div>
                 </div>
-                <div class="prj-description">A google chrome extension built which detects your loaction and gives you the current weather.</div>
+                <div class="prj-description">A google chrome extension built which detects your loaction and gives you
+                    the current weather.</div>
                 <div class="end"><a href="https://github.com/koshtaayush">Github link</a></div>
             </div>
         </div>
 
         <!--Script for swiper menu-->
         <script>
-            var swiper = new Swiper('.swiper-container');
+            var swiper = new Swiper('.swiper-container-class', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }});
         </script>
         <!--End of script for swiper menu-->
     </div>
@@ -200,7 +216,8 @@
                 </div>
             </div>
             <div class="contact-desc">
-                If you’d like to have a chat, I’m always available for a coffee. Drop me a message and I’ll get right back to you.
+                If you’d like to have a chat, I’m always available for a coffee. Drop me a message and I’ll get right
+                back to you.
             </div>
             <div class="contact-reply">
                 I tend to reply fast over mails
@@ -209,8 +226,8 @@
             <div class="contact-button">
                 <a href="mailto:koshtaayush@gmail.com" style="color:#000">Get in touch</a>
             </div>
-			
-			<div class="contact-button">
+
+            <div class="contact-button">
                 <a href="https://www.linkedin.com/in/ayush-koshta/" style="color:#000">Contact on Linkedin</a>
             </div>
         </div>
